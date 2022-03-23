@@ -6,7 +6,7 @@ a escolha do usuário e faça a impressão da série.
 
 programa
 {
-	inteiro num[11], check = 1, aux
+	inteiro num[10], check = 1, aux
 	caracter teste, teste2
 	
 	funcao inicio()
@@ -20,7 +20,7 @@ programa
 			escreva("\n")
 			para(inteiro cont = 0; cont <= 9; cont++)
 			{
-				escreva("Insira um número inteiro até um total de 10 números: ")
+				escreva(cont+1 + "º Número: ")
 				leia(num[cont])
 			}
 
@@ -44,44 +44,41 @@ programa
 	
 			se(teste == 'c' ou teste == 'C')
 			{
-				enquanto(check == 1)
+				para(inteiro cont = 0; cont <= 9; cont++)
 				{
-					check = 0
-					para(inteiro cont = 0; cont <= 9; cont++)
+					para(inteiro cont2 = 0; cont2 <= 9; cont2++)
 					{
-						se(num[cont] > num[cont+1])
+						se(num[cont2] > num[cont])
 						{
 							aux = num[cont]
-							num[cont] = num[cont+1]
-							num[cont+1] = aux
-							check = 1
+							num[cont] = num[cont2]
+							num[cont2] = aux
 						}
 					}
 				}
 
 				linha()
 				escreva("\nOrdem dos números em crescente: ")
-				para(inteiro cont = 1; cont <= 10; cont++)
+				para(inteiro cont = 0; cont <= 9; cont++)
 				{
 					escreva(num[cont], " ")
 				}
 			}
 			senao se(teste == 'd' ou teste == 'D')
 			{
-				enquanto(check == 1)
+				para(inteiro cont = 0; cont <= 9; cont++)
 				{
-					check = 0
-					para(inteiro cont = 0; cont <= 9; cont++)
+					para(inteiro cont2 = 0; cont2 <= 9; cont2++)
 					{
-						se(num[cont] < num[cont+1])
+						se(num[cont2] < num[cont])
 						{
 							aux = num[cont]
-							num[cont] = num[cont+1]
-							num[cont+1] = aux
-							check = 1
+							num[cont] = num[cont2]
+							num[cont2] = aux
 						}
 					}
 				}
+				
 				linha()
 				escreva("\nOrdem dos números em decrescente: ")
 				para(inteiro cont = 0; cont <= 9; cont++)
@@ -117,7 +114,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1790; 
+ * @POSICAO-CURSOR = 2560; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
