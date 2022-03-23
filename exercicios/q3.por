@@ -18,7 +18,7 @@ programa
 		faca
 		{
 			limpa()
-			escreva("Execício 3 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2.\n")
+			escreva("Questão 3 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2.\n")
 			escreva("\nEste programa recebe o nome de dez alunos e duas notas de cada, depois calcula a média e diz se está aprovado ou reprovado \ncom base em uma média mínima de 6.\n")
 			linha()
 			
@@ -89,7 +89,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1284; 
+ * @POSICAO-CURSOR = 343; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

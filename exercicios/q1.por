@@ -15,7 +15,7 @@ programa
 		faca
 		{
 			limpa()
-			escreva("Execício 1 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2.\n")
+			escreva("Questão 1 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2.\n")
 			escreva("\nEste programa faz a divisão de dois números inteiros inseridos pelo usuário e depois mostra o resultado e o resto.\n")
 	
 			linha()
@@ -93,7 +93,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1179; 
+ * @POSICAO-CURSOR = 407; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -18,7 +18,7 @@ programa
 		faca
 		{
 			limpa()
-			escreva("Execício 2 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2.\n")
+			escreva("Questão 2 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2.\n")
 			escreva("\nEste programa é uma calculadora de operações simples que apresenta o resultado para o usuário e pergunta se ele quer fazer outra operação.\n")
 			linha()
 
@@ -125,7 +125,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 650; 
+ * @POSICAO-CURSOR = 478; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
