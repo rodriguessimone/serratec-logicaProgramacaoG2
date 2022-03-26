@@ -26,7 +26,7 @@ programa
 			leia(resp)
 			linha()
 
-			se(resp != 1 e resp != 2)
+			enquanto(resp != 1 e resp != 2)
 			{
 				escreva("\nOpção inválida! Escolha uma opção: ")
 				escreva("\n1. Fibonacci")
@@ -114,7 +114,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1668; 
+ * @POSICAO-CURSOR = 1489; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
