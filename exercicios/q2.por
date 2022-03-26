@@ -72,16 +72,23 @@ programa
 			senao
 			{
 				resto = calcResto(num1, num2)
-				escreva("\nO resultado da sua operação é: " + resultado + " com resto " + resto + ".\n") 
+				escreva("\nO resultado da sua operação é: " + resultado + " com resto " + resto) 
 			}
 			
+			escreva("\n")
 			linha()
-			escreva("\nDeseja fazer outro cálculo? Digite 's' para sim, ou 'n' para não: ")
+			escreva("\nDeseja usar o programa novamente? Digite 's' para sim ou 'n' para não: ")
 			leia(teste)
-		}enquanto(teste == 's' ou teste == 'S')
 
-		limpa()
-		escreva("Obrigado por usar o programa!\n")
+			enquanto(teste != 's' e teste != 'S' e teste != 'n' e teste != 'N')
+			{
+				escreva("\nOpção inválida! Digite 's' para sim ou 'n' para não: ")
+				leia(teste)
+			}
+		}enquanto(teste == 's' ou teste == 'S')	
+
+		linha()
+		escreva("\nObrigado por usar o programa!\n")
 	}
 
 	funcao inteiro calcResto (inteiro a, inteiro b)
@@ -105,7 +112,7 @@ programa
 	{
 		inteiro calculo = 0
 		
-		escolha(operacao)
+		escolha(operacao) // A função escolha-caso pega uma variável e analisa ela, então utilizando-a para decidir o que fazer a seguir. Ela é útil nesse cenário para evitar um monte de senao se.
 		{
 			caso '+': calculo = a + b
 			pare
@@ -125,7 +132,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 478; 
+ * @POSICAO-CURSOR = 2025; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -69,11 +69,20 @@ programa
 				}
 			}
 
-			escreva("\n\nDeseja analisar outra lista de 10 alunos? Digite 's' ou 'n': ")
+			escreva("\n")
+			linha()
+			escreva("\nDeseja usar o programa novamente? Digite 's' para sim ou 'n' para não: ")
 			leia(teste)
-		}enquanto(teste == 's' ou teste == 'S')
 
-		escreva("\nObrigado por utilizar o programa!\n")
+			enquanto(teste != 's' e teste != 'S' e teste != 'n' e teste != 'N')
+			{
+				escreva("\nOpção inválida! Digite 's' para sim ou 'n' para não: ")
+				leia(teste)
+			}
+		}enquanto(teste == 's' ou teste == 'S')	
+
+		linha()
+		escreva("\nObrigado por usar o programa!\n")
 	}
 
 	funcao linha()
@@ -89,7 +98,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 343; 
+ * @POSICAO-CURSOR = 2096; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

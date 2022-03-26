@@ -58,18 +58,20 @@ programa
 				leia(fat)
 				linha()
 				
-				escreva("\nO fatorial de ", fat, " é: ", fatorial(fat), "\n") 
+				escreva("\nO fatorial de ", fat, " é: ", fatorial(fat)) 
 			}
 			
+			escreva("\n")
 			linha()
 			escreva("\nDeseja usar o programa novamente? Digite 's' para sim ou 'n' para não: ")
 			leia(teste)
 
-			se(teste != 's' e teste != 'S' e teste != 'n' e teste != 'N')
+			enquanto(teste != 's' e teste != 'S' e teste != 'n' e teste != 'N')
 			{
 				escreva("\nOpção inválida! Digite 's' para sim ou 'n' para não: ")
+				leia(teste)
 			}
-		}enquanto(teste == 's' ou teste == 'S')
+		}enquanto(teste == 's' ou teste == 'S')	
 
 		linha()
 		escreva("\nObrigado por usar o programa!\n")
@@ -112,7 +114,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1997; 
+ * @POSICAO-CURSOR = 1668; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

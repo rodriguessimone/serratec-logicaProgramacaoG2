@@ -45,21 +45,18 @@ programa
 
 			escreva("\n")
 			linha()
-
-			escreva("\nDeseja fazer outra divisão? Responda com 's' ou 'n': ")
+			escreva("\nDeseja usar o programa novamente? Digite 's' para sim ou 'n' para não: ")
 			leia(teste)
-		}enquanto(teste == 's' ou teste == 'S')
 
-		se(teste != 'n' ou teste != 'N')
-		{
-			limpa()
-			escreva("Resposta inválida, terminando programa.\n")
-		}
-		senao
-		{
-			limpa()
-			escreva("Obrigado por usar o programa!\n")
-		}
+			enquanto(teste != 's' e teste != 'S' e teste != 'n' e teste != 'N')
+			{
+				escreva("\nOpção inválida! Digite 's' para sim ou 'n' para não: ")
+				leia(teste)
+			}
+		}enquanto(teste == 's' ou teste == 'S')	
+
+		linha()
+		escreva("\nObrigado por usar o programa!\n")
 	}
 
 	funcao inteiro dividir(inteiro a, inteiro b)
@@ -93,7 +90,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 407; 
+ * @POSICAO-CURSOR = 1549; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
