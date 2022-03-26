@@ -15,20 +15,27 @@ programa
 
 		faca
 		{
-			escreva("Digite o valor do coeficiente A: ")
+			limpa()
+			escreva("Questão 9 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2\n")
+			escreva("\nO programa receberá os valores de uma equação de segundo grau e depois tentará aplicar a fórmula de Bhaskaras.\n")
+			linha()
+			
+			escreva("\nDigite o valor do coeficiente A: ")
 			leia(a)
 	
 			se (a == 0){
 				enquanto (a == 0){
-					escreva("Coeficiente A não pode ser 0, insira um valor válido: ")
+					escreva("\nCoeficiente A não pode ser 0, insira um valor válido: ")
 					leia(a)
+					linha()
 				}
 			}
-			
+
 			escreva("Digite o valor do coeficiente B: ")
 			leia(b)
 			escreva("Digite o valor do coeficiente C: ")
 			leia(c)
+			linha()
 			escreva("\n")
 	
 			//Calcular delta e raízes
@@ -42,8 +49,7 @@ programa
 			}
 	
 			se (delta < 0){
-				escreva("Impossível calcular, Delta não admite raízes válidas no conjunto dos reais")
-				escreva("\n")
+				escreva("Impossível calcular, Delta não admite raízes válidas no conjunto dos reais.\n")
 			}senao se (delta == 0){
 				se (b >= 0){
 					se (c>=0){
@@ -74,7 +80,6 @@ programa
 				}
 			}
 
-			escreva("\n")
 			linha()
 			escreva("\nDeseja usar o programa novamente? Digite 's' para sim ou 'n' para não: ")
 			leia(teste)
@@ -104,7 +109,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 444; 
+ * @POSICAO-CURSOR = 881; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

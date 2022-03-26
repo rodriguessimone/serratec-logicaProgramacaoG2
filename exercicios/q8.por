@@ -14,7 +14,7 @@ programa
 		faca
 		{
 			limpa()
-			escreva("Exercício de nº 8 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2\n")
+			escreva("Questão 8 do trabalho de Lógica de Programação, professor André Luiz -- Grupo 2\n")
 			escreva("\nO programa receberá uma lista de 10 números na ordem preferida do usuário e depois demonstra\nem ordem crescente ou decrescente de acordo com a escolha do usuário.\n")
 			linha()
 			escreva("\n")
@@ -114,7 +114,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 252; 
+ * @POSICAO-CURSOR = 343; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
