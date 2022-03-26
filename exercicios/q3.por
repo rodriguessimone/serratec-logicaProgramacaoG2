@@ -11,8 +11,7 @@ programa
 	funcao inicio()
 	{
 		cadeia nome[10]
-		real nota[20]
-		real media[10]
+		real notas[10][3]
 		caracter teste
 
 		faca
@@ -22,54 +21,34 @@ programa
 			escreva("\nEste programa recebe o nome de dez alunos e duas notas de cada, depois calcula a média e diz se está aprovado ou reprovado \ncom base em uma média mínima de 6.\n")
 			linha()
 			
-			para(inteiro cont = 0; cont <= 9; cont++)
+			para(inteiro cont = 0; cont < 10; cont++)
 			{
-				escreva("\nNome do(a) aluno(a): ")
+				escreva("\nNome do " + (cont+1) + "º aluno: ")
 				leia(nome[cont])
-				linha()
-				escreva("\nNota na P1: ")
-				leia(nota[cont])
-				linha()
-	
-				enquanto(nota[cont] > 10 ou nota[cont] < 0)
-				{
-					escreva("\nA nota só pode ser um valor real de 0 e 10. Por favor, insira a nota corretamente: ")
-					leia(nota[cont])
-					linha()
-				}
 				
-				escreva("\nNota na P2: ")
-				leia(nota[cont + 1])
-				linha()
-	
-				enquanto(nota[cont + 1] > 10 ou nota[cont + 1] < 0)
+				para(inteiro cont2 = 0; cont2 < 2; cont2++)
 				{
-					escreva("\nA nota só pode ser um valor real de 0 e 10. Por favor, insira a nota corretamente: ")
-					leia(nota[cont + 1])
-					linha()
+					escreva("Nota na P" + (cont2+1) + ": ")
+					leia(notas[cont][cont2])
 				}
+
+				notas[cont][2] = ((notas[cont][0] + notas[cont][1]) / 2)
+
+				linha()
 			}
-	
-			para(inteiro cont = 0; cont <= 9; cont++)
+
+			para(inteiro cont = 0; cont < 10; cont++)
 			{
-				media[cont] = (nota[cont] + nota[cont + 1]) / 2
-			}
-	
-			para(inteiro cont = 0; cont <= 9; cont++)
-			{
-				se(media[cont] >= 6)
+				se(notas[cont][2] >= 7)
 				{
-					escreva("\n" + nome[cont] + ", P1 = " + nota[cont] + ", P2 = " + nota[cont + 1] + ", Média = " + media[cont] + ". Está Aprovado. :)\n")
-					linha()
+					escreva("\nAluno: " + nome[cont] + " | P1: " + notas[cont][0] + " | P2: " + notas[cont][1] + " | Média: " + notas[cont][2] + " | Aprovado!! ;)\n")
 				}
 				senao
 				{
-					escreva("\n" + nome[cont] + ", P1 = " + nota[cont] + ", P2 = " + nota[cont + 1] + ", Média = " + media[cont] + ". Está Reprovado. :(\n")
-					linha()
+					escreva("\nAluno: " + nome[cont] + " | P1: " + notas[cont][0] + " | P2: " + notas[cont][1] + " | Média: " + notas[cont][2] + " | Reprovado. :(\n")
 				}
 			}
 
-			escreva("\n")
 			linha()
 			escreva("\nDeseja usar o programa novamente? Digite 's' para sim ou 'n' para não: ")
 			leia(teste)
@@ -98,7 +77,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2096; 
+ * @POSICAO-CURSOR = 840; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
