@@ -1,6 +1,11 @@
+/* Enunciado:
+Desenvolva um programa no qual o usuário informa 10 números e programa responde qual é o
+menor, o maior e a média dos valores.
+*/
+
 programa
 {
-	real vetor[10], aux = 0.0, menor, maior, media
+	real vetor[10], aux = 0.0, menor, maior, media
 	caracter teste
 	
 	funcao inicio()
@@ -71,7 +76,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 932; 
+ * @POSICAO-CURSOR = 140; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
