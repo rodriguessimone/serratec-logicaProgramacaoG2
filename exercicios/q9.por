@@ -23,12 +23,11 @@ programa
 			escreva("\nDigite o valor do coeficiente A: ")
 			leia(a)
 	
-			se (a == 0){
-				enquanto (a == 0){
-					escreva("\nCoeficiente A não pode ser 0, insira um valor válido: ")
-					leia(a)
-					linha()
-				}
+			enquanto (a == 0)
+			{
+				escreva("\nCoeficiente A não pode ser 0, insira um valor válido: ")
+				leia(a)
+				linha()
 			}
 
 			escreva("Digite o valor do coeficiente B: ")
