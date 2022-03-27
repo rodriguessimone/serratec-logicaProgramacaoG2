@@ -24,25 +24,25 @@ programa
 			leia(n2)
 			linha()
 			
-	 		subs = n1
-	 		
-	 		se(subs <= n2)
-	 		{
-				para(subs = subs; subs < n2; subs++)
-				{
-					se ((subs%2) == 0)
-					{
-						soma += subs
-					}
-				}
-				
-				escreva("\nA soma dos números pares entre ", n1 ," e ", n2 ," é: ", soma)
-			}
-			senao
+			enquanto(n2 < n1)
 			{
-				escreva("\nO 2° número precisa ser maior que o 1° número!")
+				escreva("\nO 2° número precisa ser maior que o 1° número. Digite o 2° número: ")
+				leia(n2)
+				linha()
 			}
 
+	 		subs = n1
+	 		
+			para(subs = subs; subs < n2; subs++)
+			{
+				se ((subs%2) == 0)
+				{
+					soma += subs
+				}
+			}
+				
+			escreva("\nA soma dos números pares entre ", n1 ," e ", n2 ," é: ", soma)
+			
 			escreva("\n")
 			linha()
 			escreva("\nDeseja usar o programa novamente? Digite 's' para sim ou 'n' para não: ")
